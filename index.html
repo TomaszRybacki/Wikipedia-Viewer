@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="author" content="Tomasz Rybacki">
+    <meta name="keywords" content="wikipedia, przeglądarka">
+    <meta name="description" content="Strona pozwalająca wyszukiwać artykuły na Wikipedi.">
+
+    <title>Przeglądarka Wikipedii</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main_pc.css">
+    <link rel="stylesheet" href="css/main_mobile.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="searchBox">
+            <h1>Wyszukiwarka artykułów na Wikipedii.</h1>
+            <a href="https://pl.wikipedia.org/wiki/Special:Random" target="_blank">&#10162; Losuj artykuł</a>
+            <input id="searchFraze" type="text"><button id="search">wyszukaj</button>
+        </div>
+        <div id="article">
+            <ul id="output">
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="scripts/jquery-3.2.0.min.js"></script>
+    <script src="scripts/code.js"></script>
+</body>
+
+</html>

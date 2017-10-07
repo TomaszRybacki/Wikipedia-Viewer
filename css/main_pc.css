@@ -1,0 +1,183 @@
+@media only screen and (min-width:416px) {
+    /* Kolory */
+    /*
+    beżowy:     #d4a59a;
+    skin:       #f3e0dc;
+    czerwony:   #6f0000;
+    */
+    /* Czcionki */
+    /*
+w3-large	Specifies a font size of 18 pixels
+w3-xlarge	Specifies a font size of 24 pixels
+w3-xxlarge	Specifies a font size of 32 pixels
+w3-xxxlarge	Specifies a font size of 48 pixels
+w3-jumbo	Specifies a font size of 64 pixels
+*/
+    #wrapper {
+        background: #200122;
+        background: -webkit-linear-gradient(to left, #6f0000, #200122);
+        background: linear-gradient(to left, #6f0000, #200122);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: "Oswald", sans-serif;
+        overflow-x: hidden;
+    }
+
+    #searchBox {
+        max-width: 80%;
+        min-width: 350px;
+        height: 300px;
+        flex: 1 1 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #f3e0dc;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #searchBox a {
+        font-size: 24px;
+        color: #f3e0dc;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    #searchBox a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #f3e0dc;
+        transition: width .5s;
+        margin: 5px auto;
+
+    }
+
+    #searchBox a:hover::after {
+        width: 100%;
+    }
+
+    button {
+        margin: 10px;
+        padding: 0px;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: solid 2px #200122;
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+        background: #200122;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 5px -5px black;
+        color: #f3e0dc;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    button:focus {
+        outline: none;
+        border: solid 2px #200122;
+    }
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 0px 20px 10px -10px black;
+        transform: translate(0px, -2px);
+    }
+
+    input {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 24px;
+        background: #6f0000;
+        box-shadow: none;
+        border: solid 2px #6f0000;
+        font-family: "Oswald", sans-serif;
+        color: #f3e0dc;
+    }
+
+    input:focus {
+        outline: none;
+        border: solid 2px #f3e0dc;
+    }
+
+    /* **** List display **** */
+   #article {
+        max-width: 900px;
+        min-width: 350px;
+        height: auto;
+        flex: 1 1 90%;
+       display: flex;
+       justify-content: center;
+    }
+
+    ul {
+        width: 90%;
+    }
+
+    li {
+
+        margin: 10px;
+        background: #200122;
+        padding: 10px;
+        border-left: solid 10px #200122;
+        box-sizing: border-box;
+    }
+
+    li:hover {
+        border-left: solid 10px #6f0000;
+
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #f3e0dc;
+        margin: 10px 40px;
+        text-transform: uppercase;
+
+    }
+
+    p {
+        font-size: 18px;
+        color: #f3e0dc;
+        margin: 10px 40px;
+
+    }
+
+    li a {
+        font-size: 18px;
+        color: #d4a59a;
+        margin: 0px 40px;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #f3e0dc;
+        transition: width .5s;
+        margin: 5px 40px;
+
+    }
+
+    li a:hover::after {
+        width: 120px;
+    }
+
+}
